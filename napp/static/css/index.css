@@ -12,7 +12,7 @@ body{
     padding-top: 2%;
 }
 .welcome{
-    min-height: 60vh;
+    min-height: 65vh;
     padding-top: 2%;
 }
 .welcome{
@@ -35,4 +35,8 @@ body{
 .planet-1{
     padding-top: 50%;
     padding-left: 40%;
+}
+
+.content{
+    color: white;
 }

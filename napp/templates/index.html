@@ -36,6 +36,7 @@
                     <img class="planet-1" src="{% static 'img/planet-1.png' %}" alt="">
                 </div>
                 <div class="col-md-6 text-center ">
+                    <br>
                     <span class="welcome-helping">HELPING YOU</span>
                     <br>
                     <br>
@@ -51,11 +52,14 @@
                     <img src="{% static 'img/moon.png' %}" alt="">
                 </div>
             </div>
-        <h1>{{results.title}}</h1>
-        <img src="{{results.hdurl}}" alt="">
-        Date posted : {{results.date}}
-        Description : {{results.description}}
-        Copyright : {{results.copyright}}
+            <div class="content">
+                <h1>{{results.title}}</h1>
+                <img class="img-responsive img-thumbnail" src="{{results.hdurl}}" alt="">
+                <br>
+                <p>Date posted : {{results.date}}</p>
+                <p>Description : {{results.explanation}}</p>
+                <p>Copyright : {{results.copyright}}</p>
+            </div>
     </div>
 
 </body>
