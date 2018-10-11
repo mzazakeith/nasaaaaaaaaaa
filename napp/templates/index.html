@@ -7,10 +7,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Nasaaaaaaaaaa</title>
-    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+    {% block styles %}
+        {% bootstrap_css %}
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.9/semantic.min.css"/>
+        <link rel="stylesheet" href="{% static 'css/index.css' %}">
+    {% endblock %}
 </head>
+    {% block scripts %}
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        {% bootstrap_javascript %}
+    {% endblock %}
 <body>
-    {{results.title}}
+    <h1>{{results.title}}</h1>
     <img src="{{results.hdurl}}" alt="">
     Date posted : {{results.date}}
     Description : {{results.description}}
