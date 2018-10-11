@@ -9,6 +9,6 @@ def index(request):
     url = endpoint.format(api_key=settings.NASA_KEY)
     response = requests.get(url)
     results = response.json()
-    print(results)
+    # print(results)
     return render(request, 'index.html', locals())
 
