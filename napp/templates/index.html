@@ -10,6 +10,7 @@
     {% block styles %}
         {% bootstrap_css %}
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.9/semantic.min.css"/>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
         <link rel="stylesheet" href="{% static 'css/index.css' %}">
     {% endblock %}
 </head>
@@ -18,10 +19,44 @@
         {% bootstrap_javascript %}
     {% endblock %}
 <body>
-    <h1>{{results.title}}</h1>
-    <img src="{{results.hdurl}}" alt="">
-    Date posted : {{results.date}}
-    Description : {{results.description}}
-    Copyright : {{results.copyright}}
+    <div class="container-fluid">
+            <div class="header row">
+                <div class="col-md-3 header-push">
+                    <span style="color:white;"><i class="fas fa-bars fa-3x"></i></span>
+                </div>
+                <div class="col-md-6 text-center">
+                    <img src="{% static 'img/bg-logo.png' %}" alt="">
+                </div>
+                <div class="col-md-3 text-right header-push" >
+                    <h3 style="color:white;"><strong>EN</strong></h3>
+                </div>
+            </div>
+            <div class="welcome row">
+                <div class="col-md-3">
+                    <img class="planet-1" src="{% static 'img/planet-1.png' %}" alt="">
+                </div>
+                <div class="col-md-6 text-center ">
+                    <span class="welcome-helping">HELPING YOU</span>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <span class="welcome-launch"><strong>LAUNCH</strong></span>
+                    <h3 class="tagline">With me on your team we can reach greater heights</h3>
+                    <br>
+                    <p><i style="color:#00C6FF;" class="fas fa-angle-double-down fa-7x"></i></p>
+                </div>
+                <div class="col-md-3">
+                    <img src="{% static 'img/moon.png' %}" alt="">
+                </div>
+            </div>
+        <h1>{{results.title}}</h1>
+        <img src="{{results.hdurl}}" alt="">
+        Date posted : {{results.date}}
+        Description : {{results.description}}
+        Copyright : {{results.copyright}}
+    </div>
+
 </body>
 </html>

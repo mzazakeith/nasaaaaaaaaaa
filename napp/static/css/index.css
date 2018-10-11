@@ -1,0 +1,38 @@
+body{
+    /* font-size: 14px; */
+    font-family: Arial, sans-serif;
+    background-color: #041527;
+    background-image:url(../img/bg-main.png);
+}
+.header{
+    min-height: 35vh;
+    max-height: 35vh!important;
+}
+.header .header-push{
+    padding-top: 2%;
+}
+.welcome{
+    min-height: 60vh;
+    padding-top: 2%;
+}
+.welcome{
+    color: #00C6FF;
+    padding-top: 2%;
+}
+.welcome-launch{
+    font-size: 120px!important;
+    margin-top: 1vh;
+}
+.welcome-helping{
+    font-size: 70px!important;
+}
+
+.tagline{
+    color: white!important;
+
+}
+
+.planet-1{
+    padding-top: 50%;
+    padding-left: 40%;
+}
