@@ -10,5 +10,5 @@ def index(request):
     response = requests.get(url)
     results = response.json()
     print(results)
-    return render(request, 'index.html')
+    return render(request, 'index.html', locals())
 
